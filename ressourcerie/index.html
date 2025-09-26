@@ -9,7 +9,7 @@
     <meta name="description" content="Vert et coton collecte, répare et revalorise vos objets.">
 </head>
 <body>
-
+    
     <header id="header" role="banner">
         <div class="container">
             <div class="brand">
@@ -17,8 +17,12 @@
                 <span>Vert et coton</span>
             </div>
             <nav class="actions" aria-label="Actions principales">
-                <a href="#workshops" class="btn">Visiter</a>
-                <button class="icon-button" aria-label="Ouvrir le menu">≡</button>
+                <div id="nav-links" class="nav-links" role="menu">
+                    <a href="#services" class="btn" role="menuitem">Nos services</a>
+                    <a href="#impact" class="btn" role="menuitem">Notre impact</a>
+                </div>
+                <button id="toggle-theme" class="btn" aria-pressed="false" title="Basculer le thème">Thème</button>
+                <button id="burger" class="icon-button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-links">≡</button>
             </nav>
         </div>
     </header>
@@ -27,14 +31,13 @@
         <section id="hero" aria-labelledby="hero-title">
             <div class="container">
                 <h1 id="hero-title">Donnez une seconde vie aux objets</h1>
-                <p>iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii.</p>
                 <div class="cta">
                     <a href="#services" class="btn primary">Découvrir nos services</a>
                     <a href="#don" class="btn">Faire un don</a>
                 </div>
             </div>
             <figure class="hero-media">
-                <img src="assets/img/img_vetement.jpg" alt="Atelier de réparation">
+                <img src="assets/img/entreer-site.png" alt="Atelier de réparation">
             </figure>
         </section>
 
@@ -107,15 +110,7 @@
             </div>
         </section>
 
-        <section id="workshops" aria-labelledby="workshops-title">
-            <div class="container">
-                <h2 id="workshops-title">Ateliers &amp; Formations</h2>
-                <p>Participez à nos ateliers pour apprendre les gestes de la réparation et du réemploi.</p>
-                <figure class="workshops-media">
-                    <img src="assets/img/placeholder.jpg" alt="Atelier collaboratif">
-                </figure>
-            </div>
-        </section>
+        
     </main>
 
     <footer id="footer" role="contentinfo">
@@ -138,7 +133,7 @@
                 <ul>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#">Boutique</a></li>
-                    <li><a href="#workshops">Ateliers</a></li>
+                    <li><a href="#impact">Impact</a></li>
                     <li><a href="#">Devenir bénévole</a></li>
                     <li><a href="#">Partenaires</a></li>
                 </ul>
@@ -155,6 +150,10 @@
 
             <p class="copyright">© 2025 Vert et coton. Tous droits réservés.</p>
         </div>
-    </footer>
+</footer>
+    <button id="back-to-top" type="button" aria-label="Revenir en haut">↑</button>
+    <script src="js/menu.js" defer></script>
+    <script src="js/theme.js" defer></script>
+    <script src="js/back-to-top.js" defer></script>
 </body>
 </html>
