@@ -229,6 +229,14 @@ section {
     grid-template-areas: "about" "links" "contact" "copy";
 }
 
+#footer h2.footer-title {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
 #footer h3 {
     margin-bottom: var(--spacing-unit);
 }
