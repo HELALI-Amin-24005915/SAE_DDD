@@ -2,7 +2,7 @@
 
 *Prompts utiliser pour Claude AI - Projet de 2ème année BUT*
 
-## 📋 Prompt 1 : Structure HTML et Accessibilité
+# Prompt 1 : Structure HTML et Accessibilité
 
 **Rôle :** Tu es un expert en développement web et accessibilité, spécialisé dans les standards W3C.
 
@@ -26,7 +26,7 @@
 
 ---
 
-## 🎨 Prompt 2 : Génération du JavaScript
+## Prompt 2 : Génération du JavaScript
 
 **Rôle :** Tu es un développeur JavaScript senior, expert en vanilla JS et bonnes pratiques de performance.
 
@@ -67,7 +67,7 @@
 
 ---
 
-## 🎯 Prompt 3 : Optimisation CSS
+## Prompt 3 : Optimisation CSS
 
 **Rôle :** Tu es un expert CSS/Performance Web, spécialisé dans l'optimisation et les bonnes pratiques modernes.
 
