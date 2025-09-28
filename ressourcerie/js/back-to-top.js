@@ -1,16 +1,4 @@
-(()=>{let backToTop=document.getElementById('back-to-top');
-  if(!backToTop){
-    backToTop=document.createElement('button');
-    backToTop.id='back-to-top';
-    backToTop.type='button';
-    backToTop.setAttribute('aria-label','Revenir en haut');
-    backToTop.textContent='↑';
-    document.body.appendChild(backToTop);
-  }
-  const TH=20;
-  function onScroll(){(document.documentElement.scrollTop>TH||document.body.scrollTop>TH)?backToTop.classList.add('visible'):backToTop.classList.remove('visible')}
-  function toTop(e){e.preventDefault();window.scrollTo({top:0,behavior:'smooth'})}
-  window.addEventListener('scroll',onScroll,{passive:!0});
-  backToTop.addEventListener('click',toTop);
-  onScroll();
-})();
+(()=>{let backToTop=document.getElementById('back-to-top');if(!backToTop){backToTop=document.createElement('button');backToTop.id='back-to-top';backToTop.type='button';backToTop.setAttribute('aria-label','Revenir en haut');backToTop.textContent='↑';document.body.appendChild(backToTop)}
+const TH=20;function onScroll(){(document.documentElement.scrollTop>TH||document.body.scrollTop>TH)?backToTop.classList.add('visible'):backToTop.classList.remove('visible')}
+function toTop(e){e.preventDefault();window.scrollTo({top:0,behavior:'smooth'})}
+window.addEventListener('scroll',onScroll,{passive:!0});backToTop.addEventListener('click',toTop);onScroll()})()

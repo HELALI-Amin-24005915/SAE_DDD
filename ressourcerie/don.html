@@ -9,7 +9,7 @@
     <meta name="description" content="Soutenez Vert et coton par un don.">
 </head>
 <body>
-    <header id="header" role="banner">
+    <header id="header" class="header">
         <div class="container">
             <a href="../index.html" class="brand">
                 <img src="assets/img/logo.svg" alt="Logo Vert et coton" width="32" height="32">
@@ -21,20 +21,25 @@
                     <a href="../index.html#impact" class="btn" role="menuitem">Notre impact</a>
                     <a href="#don" class="btn primary" role="menuitem">Faire un don</a>
                 </div>
-                <button id="toggle-theme" class="icon-button" aria-pressed="false" title="Basculer le thème">☀️</button>
-                <button id="burger" class="icon-button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-links">≡</button>
+                <button id="toggle-theme" class="icon-button toggle-theme" aria-pressed="false" title="Basculer le thème">☀️</button>
+                <button id="burger" class="icon-button burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-links">≡</button>
             </nav>
         </div>
     </header>
-    <main id="main" role="main">
+    <main id="main" class="main">
         <section id="don" aria-labelledby="don-title">
             <div class="container">
                 <h1 id="don-title">Soutenez Vert et coton</h1>
                 <p>Votre don aide à prolonger la vie des objets et à soutenir l'insertion sociale.</p>
                 <div class="cards donation-amounts">
-                    <button class="card btn donation-btn" type="button" data-amount="5">5&nbsp;€</button>
-                    <button class="card btn donation-btn" type="button" data-amount="10">10&nbsp;€</button>
-                    <button class="card btn donation-btn" type="button" data-amount="20">20&nbsp;€</button>
+                    <input type="radio" name="donation-amount" id="amount-5" value="5" class="donation-radio">
+                    <label for="amount-5" class="card btn donation-btn" data-amount="5">5&nbsp;€</label>
+                    
+                    <input type="radio" name="donation-amount" id="amount-10" value="10" class="donation-radio">
+                    <label for="amount-10" class="card btn donation-btn" data-amount="10">10&nbsp;€</label>
+                    
+                    <input type="radio" name="donation-amount" id="amount-20" value="20" class="donation-radio">
+                    <label for="amount-20" class="card btn donation-btn" data-amount="20">20&nbsp;€</label>
                 </div>
                 <form class="card donation-form" autocomplete="off">
                     <h3 class="card-title">Paiement par carte bleue</h3>
@@ -57,30 +62,34 @@
             </div>
         </section>
     </main>
-    <footer id="footer" role="contentinfo">
+    <footer id="footer" class="footer">
         <div class="container">
-            <h2 class="footer-title">Informations et Contact</h2>
+            <h2 class="footer-title">Contact</h2>
             
             <section class="about" aria-labelledby="about-title">
+                <h3 id="about-title" class="visually-hidden">À propos de Vert et coton</h3>
                 <div class="brand">
                     <img src="assets/img/logo.svg" alt="Logo Vert et coton" width="24" height="24">
-                    <span id="about-title">Vert et coton</span>
+                    <span>Vert et coton</span>
                 </div>
-                <p>Acteur de l'économie circulaire et sociale, nous œuvrons pour un monde plus durable.</p>
-                <div class="socials" aria-label="Réseaux sociaux">
+                <nav aria-label="Navigation principale du footer">
+                    <a href="../index.html" class="footer-home-link">Accueil</a>
+                </nav>
+                <nav class="socials" aria-labelledby="socials-title">
+                    <h4 id="socials-title" class="visually-hidden">Réseaux sociaux</h4>
                     <a href="#" aria-label="Facebook">FB</a>
                     <a href="#" aria-label="Instagram">IG</a>
                     <a href="#" aria-label="X">X</a>
-                </div>
+                </nav>
             </section>
             <nav class="quick-links" aria-labelledby="links-title">
-                <h3 id="links-title">Liens rapides</h3>
+                <h3 id="links-title">Navigation</h3>
                 <ul>
                     <li><a href="../index.html#services">Services</a></li>
-                    <li><a href="#">Boutique</a></li>
-                    <li><a href="../index.html#impact">Impact</a></li>
-                    <li><a href="#">Devenir bénévole</a></li>
-                    <li><a href="#">Partenaires</a></li>
+                    <li><a href="../index.html#impact">Notre impact</a></li>
+                    <li><a href="don.html">Faire un don</a></li>
+                    <li><a href="#" aria-label="Boutique - Ouverture prochaine">Boutique</a></li>
+                    <li><a href="#" aria-label="Devenir bénévole - Nous rejoindre">Devenir bénévole</a></li>
                 </ul>
             </nav>
             <section class="contact" aria-labelledby="contact-title">
@@ -91,13 +100,23 @@
                     <li><a href="mailto:contact@laressourcerie.fr">contact@laressourcerie.fr</a></li>
                 </ul>
             </section>
-            <p class="copyright">© 2025 Vert et coton. Tous droits réservés.</p>
+            <div class="footer-bottom">
+                <p class="copyright">© 2025 Vert et coton. Tous droits réservés.</p>
+                <p class="validation-badges">
+                    <a href="https://jigsaw.w3.org/css-validator/check/referer" 
+                       aria-label="Valider le CSS de cette page">
+                        <img src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+                             alt="CSS Valide !" 
+                             width="88" 
+                             height="31" />
+                    </a>
+                </p>
+            </div>
         </div>
     </footer>
-    <button id="back-to-top" type="button" aria-label="Revenir en haut">↑</button>
+    <button id="back-to-top" class="back-to-top" type="button" aria-label="Revenir en haut">↑</button>
     <script src="js/menu.js" defer></script>
     <script src="js/theme.js" defer></script>
     <script src="js/back-to-top.js" defer></script>
-    <script src="js/don.js" defer></script>
 </body>
 </html>
