@@ -1,0 +1,16 @@
+# Redirections 301 pour SEO - Netlify
+# Redirige le sous-domaine netlify.app vers le domaine personnalisé
+
+# Redirection principale du sous-domaine vers le domaine personnalisé
+https://vert-et-coton.netlify.app/* https://vertetcoton.fr/:splat 301!
+
+# Redirections spécifiques pour les pages importantes
+https://vert-et-coton.netlify.app/ https://vertetcoton.fr/ 301!
+https://vert-et-coton.netlify.app/ressourcerie/don.html https://vertetcoton.fr/ressourcerie/don.html 301!
+
+# Redirection www vers non-www (optionnel)
+https://www.vertetcoton.fr/* https://vertetcoton.fr/:splat 301!
+
+# Redirection HTTP vers HTTPS (sécurité)
+http://vertetcoton.fr/* https://vertetcoton.fr/:splat 301!
+http://www.vertetcoton.fr/* https://vertetcoton.fr/:splat 301!

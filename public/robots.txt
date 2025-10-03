@@ -1,0 +1,25 @@
+# Robots.txt pour Vert et coton
+# https://vertetcoton.fr
+
+User-agent: *
+Allow: /
+
+# Bloquer l'indexation du sous-domaine Netlify
+User-agent: *
+Disallow: /
+
+# Sitemap
+Sitemap: https://vertetcoton.fr/sitemap.xml
+
+# Directives spécifiques
+Crawl-delay: 1
+
+# Autoriser les moteurs de recherche principaux
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
